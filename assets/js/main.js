@@ -291,6 +291,7 @@
   const gsap = window.gsap;
   const ST = window.ScrollTrigger;
   gsap.registerPlugin(ST);
+  ST.clearScrollMemory("manual");
   gsap.defaults({ ease: "expo.out", duration: 1.2 });
 
   /* --- Split helpers --- */
